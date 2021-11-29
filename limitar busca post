@@ -1,0 +1,13 @@
+/* Se não é o painel administrativo, segue */
+if (!is_admin()) {
+function buscar_somente_posts($query) {
+/* Se a consulta é uma busca, então */
+if ($query->is_search) {
+/* Limita o "post_type" a posts */
+$query->set('post_type', 'post');
+}
+return $query;
+}
+/* Adiciona a função ao filtro pre_get_posts */
+add_filter('pre_get_posts','buscar_somente_posts');
+}
