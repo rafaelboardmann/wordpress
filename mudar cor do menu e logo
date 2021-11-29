@@ -1,0 +1,42 @@
+Código CSS utilizado:
+
+div#top-bar-wrap {
+display: none!important;
+}
+
+#header.elementor-sticky--effects {
+background-color: #fff;
+transition: all .5s ease;
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+#header.elementor-sticky--effects .logo img {
+content:url('coloque o link da sua logo aqui e não apague as aspas') !important;
+}
+
+#header.elementor-sticky--effects .roblox li a {
+color: #ec8c08!important;
+}
+
+/*Codigo para funcionar no Firefox*/
+#header.elementor-sticky--effects .logo:before {
+    content:url('coloque o link da sua logo aqui e não apague as aspas') !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    }
+
+#header.elementor-sticky--effects .logo img {
+    opacity: 0;
+    }
+
+
+
+/*diminuir logo*/
+selector.elementor-sticky--effects .diminuilogo
+{
+	transtion: width 1s ease;
+	width:150px;
+}
