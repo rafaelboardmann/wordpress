@@ -1,0 +1,10 @@
+body, html {
+overflow-x: hidden !important;
+}
+
+/Corrigir escrollamento no Mobile/
+@media (max-width: 786px){
+body, html {
+overflow-x: hidden!important;
+}
+}
